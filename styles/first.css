@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.item-1 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  top: 190px;
+  left: 100px;
+  position: absolute;
+  mix-blend-mode: hard-light;
+}
+
+.item-2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  top: 170px;
+  left: 50px;
+  position: absolute;
+  mix-blend-mode: hue;
+}
