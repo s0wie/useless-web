@@ -1,3 +1,6 @@
+body {
+  background-color: white;
+}
 .container {
   position: relative;
   height: 100vh;
@@ -11,7 +14,12 @@
   top: 190px;
   left: 100px;
   position: absolute;
-  mix-blend-mode: hard-light;
+  mix-blend-mode: difference;
+  border-radius: 100%;
+}
+
+.item-1:active {
+  background-color: blue;
 }
 
 .item-2 {
@@ -21,5 +29,25 @@
   top: 170px;
   left: 50px;
   position: absolute;
-  mix-blend-mode: hue;
+  mix-blend-mode: difference;
+}
+
+.move-ltr {
+  -webkit-animation: moveltr 5s;
+  animation: moveltr 5s;
+}
+
+@keyframes moveltr {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
 }
