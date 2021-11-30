@@ -35,19 +35,13 @@ body {
 .move-ltr {
   -webkit-animation: moveltr 5s;
   animation: moveltr 5s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes moveltr {
   0% {
-    left: 0px;
-    top: 0px;
-  }
-  50% {
-    left: 200px;
-    top: 0px;
   }
   100% {
-    left: 0px;
-    top: 0px;
+    transform: translateY(-1000px);
   }
 }

@@ -15,6 +15,7 @@ function showCoords(event) {
 }
 
 function dropElements() {
+  const elements = document.querySelectorAll('.item-1');
   elements.forEach((element) => {
     element.classList.add('move-ltr');
   });
@@ -22,6 +23,3 @@ function dropElements() {
 }
 
 window.addEventListener('keydown', dropElements);
-
-let elements = document.querySelectorAll('.item-1');
-console.log(elements);
