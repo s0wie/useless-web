@@ -35,15 +35,15 @@ const addClass = [
 
 // different balloons
 const balloonUrl = [
-  'images/balloon-yellow.png',
-  'images/balloon-yellow.png',
   'images/balloon-pink.png',
+  'images/balloon-yellow.png',
+  'images/balloon-yellow.png',
   'images/balloon-purple.png',
   'images/balloon-red.png',
   'images/balloon-red.png',
   'images/balloon-blue.png',
   'images/balloon-blue.png',
   'images/balloon-green.png',
-  'images/balloon-green.png',
+  'images/balloon-lightgreen.png',
   'images/balloon-purple.png',
 ];
