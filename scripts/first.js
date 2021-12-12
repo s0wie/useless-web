@@ -14,7 +14,7 @@ function createShapes(event) {
   console.log(coords);
   document.querySelector('.coords').innerHTML = coords;
 
-  let randomInt = Math.round(Math.random() * 10);
+  let randomInt = Math.round(Math.random() * 9);
   let newDiv = document.createElement('img');
   newDiv.src = `${balloonUrl[randomInt]}`;
   newDiv.width = 100;
