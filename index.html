@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Useless website in vanilla JS</title>
     <link rel="stylesheet" href="styles/first.css" />
+    <link rel="stylesheet" href="styles/font.css" />
   </head>
   <body>
-    <div onclick="showCoords(event)" class="container">
-      <p id="demo"></p>
-      <div class="item-1"></div>
+    <div class="container">
+      <p class="coords"></p>
+      <p class="instructions">Click anywhere to create balloons</p>
+      <p class="instructions">Press space to make them float away</p>
+      <div class="clouds-1"></div>
+      <img src="" alt="" />
       <div class="item-2"></div>
     </div>
+    <!-- olika storlekar på balloonger
+om liten, z-index mindre vilket gör att den flyger bakom stora molnen
+ju större moln, desto större z-index
+skit i mix-blend-mode -->
 
+    <!-- ATT GÖRA
+- Moln i figma
+- Moln som svävar fram och tillbaka
+- Ballonger i figma
+- Scale
+- Parallaxeffekt på ballonger FÖRST -->
     <script src="scripts/first.js"></script>
+    <script src="scripts/data.js"></script>
   </body>
 </html>

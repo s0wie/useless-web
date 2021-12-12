@@ -1,9 +1,45 @@
-body {
-  background-color: white;
+:root {
+  /* background colours */
+  --black: #201a23;
+  --purple: #631d76;
+  --skyblue: #56cbf9;
+  --turquoise: #81f4e1;
+  --pink: #ff729f;
+  --lavender: #d3c4d1;
+  --orange: #fc9e4f;
+  --yellow: #f0f3bd;
+  --green: #99f7ab;
+  --superyellow: #fcf300;
+  --red: #bb0a21;
+
+  /* primary colours: red, yellow, green, cyan, blue, magenta */
+  --randomColour: #ccc;
+
+  /* Shadow */
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
-.demo {
+body {
+  background-color: var(--skyblue);
+  transition-duration: 1s;
+}
+
+.coords {
   position: absolute;
+  font-family: Ubuntu, sans-serif;
+  bottom: 0;
+  left: 1rem;
+  color: white;
+  text-shadow: var(--shadow);
+}
+
+.instructions {
+  font-family: Ubuntu, sans-serif;
+  margin-left: 1rem;
+  color: white;
+  text-shadow: var(--shadow);
 }
 .container {
   position: relative;
@@ -11,38 +47,64 @@ body {
   width: 100%;
 }
 
-.item-1 {
-  width: 100px;
-  height: 100px;
-  background-color: pink;
+.positioning {
   top: 190px;
   left: 100px;
   position: absolute;
-  mix-blend-mode: difference;
-  border-radius: 100%;
+}
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8,
+.item-9,
+.item-10 {
+}
+.move-up {
+  -webkit-animation: moveup 5s;
+  animation: moveup 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 
-.item-1:active {
-  background-color: blue;
+.move-up-fast {
+  -webkit-animation: moveup 5s;
+  animation: moveup 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 
-.item-2 {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  top: 170px;
-  left: 50px;
-  position: absolute;
-  mix-blend-mode: difference;
-}
-
-.move-ltr {
-  -webkit-animation: moveltr 5s;
-  animation: moveltr 5s;
+.move-up-slow {
+  -webkit-animation: moveup 5s;
+  animation: moveup 8s;
   animation-fill-mode: forwards;
 }
 
-@keyframes moveltr {
+.move-up-delay {
+  -webkit-animation: moveup 5s;
+  animation: moveup 3s;
+  animation-delay: 0.5;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+.move-up-delay-2 {
+  -webkit-animation: moveup 5s;
+  animation: moveup 3s;
+  animation-delay: 0.3;
+  animation-fill-mode: forwards;
+}
+.move-up-delay-3 {
+  -webkit-animation: moveup 5s;
+  animation: moveup 3s;
+  animation-delay: 0.5;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveup {
   0% {
   }
   100% {
