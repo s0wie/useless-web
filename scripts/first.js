@@ -44,36 +44,52 @@ function dropElements() {
   const itemsTen = document.querySelectorAll('.item-10');
   itemsOne.forEach((oneItem) => {
     oneItem.classList.add('move-up');
+    removeBalloons(oneItem);
   });
 
   itemsTwo.forEach((twoItem) => {
     twoItem.classList.add('move-up-delay');
+    removeBalloons(twoItem);
   });
 
   itemsThree.forEach((threeItem) => {
     threeItem.classList.add('move-up-fast');
+    removeBalloons(threeItem);
   });
   itemsFour.forEach((fourItem) => {
     fourItem.classList.add('move-up');
+    removeBalloons(fourItem);
   });
   itemsFive.forEach((fiveItem) => {
     fiveItem.classList.add('move-up-delay-2');
+    removeBalloons(fiveItem);
   });
   itemsSix.forEach((sixItem) => {
     sixItem.classList.add('move-up-fast');
+    removeBalloons(sixItem);
   });
   itemsSeven.forEach((sevenItem) => {
     sevenItem.classList.add('move-up');
+    removeBalloons(sevenItem);
   });
   itemsEight.forEach((eightItem) => {
     eightItem.classList.add('move-up-slow');
+    removeBalloons(eightItem);
   });
   itemsNine.forEach((nineItem) => {
     nineItem.classList.add('move-up-fast');
+    removeBalloons(nineItem);
   });
   itemsTen.forEach((tenItem) => {
     tenItem.classList.add('move-up-delay-3');
+    removeBalloons(tenItem);
   });
+}
+
+function removeBalloons(balloon) {
+  setTimeout(() => {
+    balloon.remove();
+  }, 10000);
 }
 
 function changeBackground() {
@@ -90,9 +106,9 @@ function handleGesture() {
   if (touchendY > touchstartY) dropElements();
 }
 slider.addEventListener('touchstart', (e) => {
-  touchstartY = e.changedTouches[0].screenX;
+  touchstartY = e.changedTouches[0].screenY;
 });
 slider.addEventListener('touchend', (e) => {
-  touchendY = e.changedTouches[0].screenX;
+  touchendY = e.changedTouches[0].screenY;
   handleGesture();
 });

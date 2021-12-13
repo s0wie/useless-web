@@ -1,15 +1,15 @@
 // Array for background colours on scroll
 const backgroundColours = [
-  'var(--black)',
+  'var(--sienna)',
   'var(--purple)',
   'var(--skyblue)',
-  'var(--turquoise)',
+  'var(--coral)',
   'var(--pink)',
+  'var(--prussianblue)',
   'var(--orange)',
-  'var(--yellow)',
-  'var(--green)',
-  'var(--superyellow)',
-  'var(--black)',
+  'var(--teal)',
+  'var(--purplenavy)',
+  'var(--queenblue)',
   'var(--red)',
 ];
 
