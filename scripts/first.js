@@ -1,18 +1,19 @@
 // VARIABLES
 const container = document.querySelector('.container');
+const button = document.querySelector('button');
 
 // EVENT LISTENERS
-window.addEventListener('keydown', dropElements);
-container.addEventListener('click', createShapes);
+button.addEventListener('click', buttonPressed);
+window.addEventListener('keydown', spacePressed);
+container.addEventListener('click', createBalloons);
 window.addEventListener('mousewheel', changeBackground);
 
 // FUNCTIONS
-function createShapes(event) {
+function createBalloons(event) {
   let x = event.clientX;
   let y = event.clientY;
   let coords = `coordinates: (${x}, ${y})`;
   console.log(coords);
-  document.querySelector('.coords').innerHTML = coords;
 
   let randomInt = Math.round(Math.random() * 9);
   let newDiv = document.createElement('img');
@@ -25,8 +26,16 @@ function createShapes(event) {
   newDiv.style.left = `${x - 50}px`;
 }
 
-// Ge dem random class namn t.ex item-5. Kör if-satser. If item-1 -> add 'move up';
-// if item-5 add "move-up-delay-slow"
+function buttonPressed() {
+  console.log('button is pressed');
+  dropElements();
+}
+function spacePressed(event) {
+  if (event.key == ' ') {
+    dropElements();
+  }
+}
+
 function dropElements() {
   const itemsOne = document.querySelectorAll('.item-1');
   const itemsTwo = document.querySelectorAll('.item-2');

@@ -1,5 +1,5 @@
 :root {
-  /* background colours */
+  /* BACKGROUND COLOURS */
   --black: #201a23;
   --purple: #631d76;
   --skyblue: #56cbf9;
@@ -11,11 +11,9 @@
   --green: #99f7ab;
   --superyellow: #fcf300;
   --red: #bb0a21;
+  --white: white;
 
-  /* primary colours: red, yellow, green, cyan, blue, magenta */
-  --randomColour: #ccc;
-
-  /* Shadow */
+  /* SHADOW */
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
     0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
     0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
@@ -26,21 +24,13 @@ body {
   transition-duration: 1s;
 }
 
-.coords {
-  position: absolute;
-  font-family: Ubuntu, sans-serif;
-  bottom: 0;
-  left: 1rem;
-  color: white;
-  text-shadow: var(--shadow);
-}
-
 .instructions {
   font-family: Ubuntu, sans-serif;
   margin-left: 1rem;
-  color: white;
+  color: var(--white);
   text-shadow: var(--shadow);
 }
+
 .container {
   position: relative;
   height: 94vh;
@@ -52,6 +42,7 @@ body {
   left: 100px;
   position: absolute;
 }
+
 .item-1,
 .item-2,
 .item-3,
@@ -66,6 +57,7 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
+/* DIFFERENT SPEEDS */
 .move-up {
   -webkit-animation: moveup 5s;
   animation: moveup 5s;
@@ -107,6 +99,7 @@ body {
   animation-fill-mode: forwards;
 }
 
+/* KEY FRAMES */
 @keyframes moveup {
   0% {
   }

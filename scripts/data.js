@@ -1,9 +1,3 @@
-// Array for mix-blend
-
-// Array for shapes
-
-// Array for sizes
-
 // Array for background colours on scroll
 const backgroundColours = [
   'var(--black)',
