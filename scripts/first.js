@@ -3,7 +3,6 @@ const container = document.querySelector('.container');
 const button = document.querySelector('button');
 
 // EVENT LISTENERS
-button.addEventListener('click', buttonPressed);
 window.addEventListener('keydown', spacePressed);
 container.addEventListener('click', createBalloons);
 window.addEventListener('mousewheel', changeBackground);
@@ -26,10 +25,6 @@ function createBalloons(event) {
   newDiv.style.left = `${x - 50}px`;
 }
 
-function buttonPressed() {
-  console.log('button is pressed');
-  dropElements();
-}
 function spacePressed(event) {
   if (event.key == ' ') {
     dropElements();

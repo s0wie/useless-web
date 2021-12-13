@@ -31,6 +31,9 @@ body {
   text-shadow: var(--shadow);
 }
 
+.desktop {
+  display: none;
+}
 .container {
   position: relative;
   height: 94vh;
@@ -116,5 +119,14 @@ body {
   }
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
   }
 }
