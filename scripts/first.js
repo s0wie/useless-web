@@ -85,3 +85,19 @@ function changeBackground() {
   let randomInt = Math.round(Math.random() * 10);
   document.body.style.background = backgroundColours[randomInt];
 }
+
+// Swipe up for mobile
+let touchstartY = 0;
+let touchendY = 0;
+const slider = document.querySelector('.container');
+function handleGesture() {
+  if (touchendY < touchstartY) dropElements();
+  if (touchendY > touchstartY) dropElements();
+}
+slider.addEventListener('touchstart', (e) => {
+  touchstartY = e.changedTouches[0].screenX;
+});
+slider.addEventListener('touchend', (e) => {
+  touchendY = e.changedTouches[0].screenX;
+  handleGesture();
+});
