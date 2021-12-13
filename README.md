@@ -1,6 +1,6 @@
-INSERT MANDATORY GIF
+![Balloons flying up the sky](https://media.giphy.com/media/iZGpuaRKdEZoI/giphy.gif)
 
-# Project Title
+# Up up and away - a useless website
 
 Text about the project. This would also be a great place to link the game on Netlify.
 
