@@ -2,11 +2,9 @@
 
 # Up up and away - a useless website
 
-Text about the project. This would also be a great place to link the game on Netlify.
+This is a useless website I made for my first JavaScript course @yrgo. In this website you can click anywhere to spawn balloons, and then make them up up and away!
 
-# Installation
-
-Add the installation instructions.
+The website can be found at www.upupandaway.netlify.app.
 
 # Code Review by Agnes Skönvall
 
@@ -22,5 +20,5 @@ All in all, very nice webpage! Completely useless, just as it should. Your code 
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Linnea Eriksson
+2. Amanda Karlsson
