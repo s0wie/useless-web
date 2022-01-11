@@ -2,7 +2,7 @@
 
 # Up up and away - a useless website
 
-This is a useless website I made for my first JavaScript course @yrgo. In this website you can click anywhere to spawn balloons, and then make them up up and away!
+This is a useless website I made for my first JavaScript course @yrgo. In this website you can click anywhere to spawn balloons, and then make them go up up and away!
 
 The website can be found at www.upupandaway.netlify.app.
 
